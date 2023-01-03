@@ -11,6 +11,7 @@ import { PedirComida } from './pages/PedirComida/PedirComida'
 import { Registrarse } from './pages/Registrarse/Registrarse';
 import { Reservas } from './pages/Reservas/Reservas';
 import { Contacto } from './pages/Contacto/Contacto';
+import { About } from './pages/About/About';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/carta' element={<Carta/>}/>
         <Route path='/reservas' element={<Reservas/>}/>
         <Route path='/contacto' element={<Contacto/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
     </div>
       
