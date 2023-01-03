@@ -1,7 +1,7 @@
 .grid-container {
     grid-auto-flow: dense;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: minmax(200px, auto);
 }
 
@@ -74,9 +74,9 @@
 .about-main-container{
     text-align: center;
     
-  }
-  .about-main{
+}
+.about-main{
     color: white;
     background-color: #3a111c;
     border-bottom: solid 1px #fff;
-  }
+}

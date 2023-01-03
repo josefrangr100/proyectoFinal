@@ -9,8 +9,11 @@ import { Carta } from './pages/Carta/Carta';
 import { Login } from './pages/Login/Login';
 import { PedirComida } from './pages/PedirComida/PedirComida'
 import { Registrarse } from './pages/Registrarse/Registrarse';
+import { Reservas } from './pages/Reservas/Reservas';
+import { Contacto } from './pages/Contacto/Contacto';
 
 function App() {
+
   return (
     <>
       <Header/>
@@ -22,6 +25,8 @@ function App() {
         <Route path='/login' element={<Login/>}/> 
         <Route path='/pedir' element={<PedirComida/>}/>
         <Route path='/carta' element={<Carta/>}/>
+        <Route path='/reservas' element={<Reservas/>}/>
+        <Route path='/contacto' element={<Contacto/>}/>
       </Routes>
     </div>
       

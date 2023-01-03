@@ -1,12 +1,14 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { AboutSection } from '../AboutSection/AboutSection'
 
-export const GridItems = () => {
-  return (
-    <>
 
-        <div className="grid-item tall">
+export const GridItems = () => {
+
+
+    return ( 
+    <>
+    
+        <div className="grid-item tall" >
                     <img src="http://quintotiempo.com/media/k2/items/cache/2fa67f482133f1c934235b73c2a03954_XL.jpg" alt="" />
                 </div>
                 <div className="grid-item">

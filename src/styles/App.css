@@ -16,24 +16,57 @@ body{
     flex-grow: 1;
     flex-direction: column;
 }
+
 .footer-container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
     background-color: rgb(112, 37, 37);
-    text-align: center;
     color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.contactoFooter{
     margin-top: 10px;
 }
 
-.footer-item-1{
-    flex-grow: 1;
+.footer-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.footer-item-2{
-    flex-grow: 1;
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
-.footer-item-3{
-    flex-grow: 1;
+
+.footer-logo img{
+    width: 250px;
+}
+.copyRight{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer-redes-container{
+    margin-top: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes{
+    font-size: 30px;
+    color: rgb(234, 190, 63);
 }
 
 .logo{
@@ -64,5 +97,4 @@ body{
 .links-nav:hover{
     background-color: rgb(131, 66, 66);
 }
-
 
