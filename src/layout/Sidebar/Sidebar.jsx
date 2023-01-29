@@ -1,6 +1,6 @@
-import React from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap'
-import { Logo } from '../../components/Logo/Logo'
+import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Logo } from '../../components/Logo/Logo';
 
 export const Sidebar = () => {
   return (

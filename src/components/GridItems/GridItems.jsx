@@ -45,7 +45,7 @@ export const GridItems = () => {
                     <AboutSection/>
                 </div>
                 <div className="grid-item links-item link-registro-container">
-                <NavLink href="/registrarse" to='registrarse' className='link-registrarse-container'>
+                <NavLink href="/registro" to='registro' className='link-registrarse-container'>
                         <div className='link-registro'>
                             Registrarse
                         </div>

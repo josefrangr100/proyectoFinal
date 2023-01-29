@@ -1,0 +1,29 @@
+
+.menuCard{
+    transition: 1s;
+}
+
+.menuCard:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.cardImg{
+    height: 200px;
+}
+
+.cardButton {
+   background-color: rgb(112, 37, 37);
+}
+
+.cardButton:hover {
+    background-color: rgb(90, 30, 30);
+}
+
+.cardButton:active{
+    background-color: rgb(90, 30, 30);
+}
+
+.cardBody {
+    background-color: rgb(255,204,183);
+}

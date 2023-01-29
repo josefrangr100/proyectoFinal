@@ -2,9 +2,9 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import './registro.css';
+import '../../styles/Register.css';
 
-function Registro() {
+export const Registrarse = () => {
   return (
     <>
     <h1 className="p-4"> Registrarse </h1>
@@ -41,4 +41,4 @@ function Registro() {
   );
 }
 
-export default Registro;
+
