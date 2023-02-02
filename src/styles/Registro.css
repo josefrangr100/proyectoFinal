@@ -1,0 +1,29 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300&family=Hind+Siliguri:wght@300&family=IBM+Plex+Sans+Condensed:wght@400;500&display=swap')  */
+
+.formRegistro {
+    grid-auto-flow: dense;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    }
+
+    body{
+        margin: 0px;
+        background-color: rgb(151, 96, 28);
+        
+    }
+
+    .itemsRegistro{
+        /* display: inline-block; */
+        flex-direction: column;
+          
+    }
+
+    .titleRegister{
+        color: brown;
+    }
+
+    .rowItems{
+        display: inline-block;
+        flex-grow: 1;    
+    }
