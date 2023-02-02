@@ -25,5 +25,13 @@
 
     .rowItems{
         display: inline-block;
-        flex-grow: 1;    
+        flex-grow: 1;  
+        flex-direction: column;  
+        padding: 1rem;
     }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    

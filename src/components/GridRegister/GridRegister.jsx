@@ -53,24 +53,23 @@ export const GridRegister = () => {
         <Col sm={6} className="itemsRegistro">
           
           <Row className='rowItems'>
-          <FaCheck /> 
           
-          <p>Recibi los menus diarios a tu mail</p>
+          <h4> <FaCheck style={{color: 'brown', fontSize: '30px'}} />  Recibi los menus diarios a tu mail</h4>
           </Row>
 
           <Row className='rowItems'>
-          <FaCheck />
-            <p>Obtené descuentos especiales para suscriptores</p>
+          
+            <h4> <FaCheck style={{color: 'brown', fontSize: '30px'}}/> Obtené descuentos especiales para suscriptores</h4>
           </Row>
 
             <Row className='rowItems'>
-          <FaCheck />
-            <p>Envios gratis</p>
+         
+            <h4>  <FaCheck style={{color: 'brown', fontSize: '30px'}}/> Envios gratis</h4>
           </Row>
 
           <Row className='rowItems'>
-          <FaCheck />
-            <p>Envios prioritarios</p>
+          
+            <h4 > <FaCheck style={{color: 'brown', fontSize: '30px'}}/> Envios prioritarios</h4>
           </Row>
         
         </Col>
