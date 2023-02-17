@@ -100,29 +100,29 @@ export const GridRegister = () => {
       <Col xs={12} lg={6}>
     <Form.Group className="mb-3" controlId="formBasicName">
         <Form.Label>Nombre</Form.Label>
-        <Form.Control value={name} onChange={(e)=>{setName(e.target.value)}} type="text" placeholder="Ingrese su nombre"  name='name' maxLength={20} minLength={3}/>
+        <Form.Control value={name} onChange={(e)=>{setName(e.target.value)}} type="text" placeholder="Ingrese su nombre"  name='name' maxLength={20} minLength={3} required/>
       </Form.Group>
       </Col>
       <Col  xs={12} lg={6}>
     <Form.Group className="mb-3" controlId="formBasicSurname">
         <Form.Label>Apellido</Form.Label>
-        <Form.Control value={lastname} onChange={(e)=>{setLastName(e.target.value)}} type="text" placeholder="Ingrese su apellido" name='lastName' maxLength={20} minLength={3}/>
+        <Form.Control value={lastname} onChange={(e)=>{setLastName(e.target.value)}} type="text" placeholder="Ingrese su apellido" name='lastName' maxLength={20} minLength={3} required/>
       </Form.Group>
       </Col>
       </Row>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Direccion de correo electronico</Form.Label>
-        <Form.Control value={email} onChange={(e)=>{setEmail(e.target.value)}}  type="email" placeholder="Ingrese email" name='email' maxLength={30}/>
+        <Form.Control value={email} onChange={(e)=>{setEmail(e.target.value)}}  type="email" placeholder="Ingrese email" name='email' maxLength={30} required/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Contraseña</Form.Label>
-        <Form.Control value={password} onChange={(e)=>{setPassword(e.target.value)}} type="password" placeholder="Ingrese contraseña" name='password' maxLength={10}/>
+        <Form.Control value={password} onChange={(e)=>{setPassword(e.target.value)}} type="password" placeholder="Ingrese contraseña" name='password' maxLength={10} required/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Contraseña</Form.Label>
-        <Form.Control value={confirmPassword} onChange={(e)=>{setConfirmPassword(e.target.value)}} type="password" placeholder="Confirme su contraseña" name='confirmPassword' maxLength={10}/>
+        <Form.Control value={confirmPassword} onChange={(e)=>{setConfirmPassword(e.target.value)}} type="password" placeholder="Confirme su contraseña" name='confirmPassword' maxLength={10} required/>
       </Form.Group>
   
       <Button className="button-reg" variant="outline-dark" type="submit">
