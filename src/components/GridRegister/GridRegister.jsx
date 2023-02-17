@@ -51,14 +51,31 @@ export const GridRegister = () => {
 
 
 
-  async function AddNewUsers (data){
+  async function AddNewUsers (evt){
     try {
+    
+      evt.preventDefault();
+      
+      const el = evt.target.elements;
+
+      if(el.password.value !== el.confirmPassword.value) {
+        alert('Las contraseñas no coinciden')
+        return
+      }
+
+      console.log(evt);
+      const data = {
+        name: el.name.value,
+        lastName: el.lastName.value,
+        email: el.email.value,
+        password: el.password.value
+      }
       // const { nameInput, surInput, emailInput, passwordInput, passwordRepeatInput} = data;
-      const registerData = await axios.post(`http://localhost:3001`, data);
-      console.log(registerData.data)
+      const registerData = await axios.post(`http://localhost:3001/users`, data);
+      console.log(registerData)
       //aqui hace un local storage con el json del registro
 
-
+      evt.target.reset()
     } catch (error) {
       console.log(error)
     }
@@ -66,7 +83,7 @@ export const GridRegister = () => {
   }
 
 // async function AddNewUsers(e){
-//   e.preventDefault()
+
 //     console.log(`agregar usuario nuevo`, nameInput.current.value, surInput.current.value, emailInput.current.value, passwordInput.current.value, passwordRepeatInput.current.value)
 // }
 
@@ -108,7 +125,7 @@ export const GridRegister = () => {
         <Form.Control value={confirmPassword} onChange={(e)=>{setConfirmPassword(e.target.value)}} type="password" placeholder="Confirme su contraseña" name='confirmPassword' maxLength={10}/>
       </Form.Group>
   
-      <Button onClick={AddNewUsers} className="button-reg" variant="outline-dark" type="submit">
+      <Button className="button-reg" variant="outline-dark" type="submit">
         Registrarme
       </Button>
     </Form>
