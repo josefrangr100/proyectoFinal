@@ -6,7 +6,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import { useState } from 'react';
-// import { useEffect } from 'react';
+import swal from 'sweetalert';
+
 
 
 // //aqui puso la url como una constante pero esta en el home
@@ -59,7 +60,7 @@ export const GridRegister = () => {
       const el = evt.target.elements;
 
       if(el.password.value !== el.confirmPassword.value) {
-        alert('Las contraseñas no coinciden')
+        swal("Error", "Las contraseñas no coinciden", "warning");
         return
       }
 
@@ -72,12 +73,14 @@ export const GridRegister = () => {
       }
       // const { nameInput, surInput, emailInput, passwordInput, passwordRepeatInput} = data;
       const registerData = await axios.post(`http://localhost:3001/users`, data);
-      console.log(registerData)
+      console.log(registerData);
+      swal("Enhorabuena!", "El usuario ha sido registrado correctamente!", "success");
       //aqui hace un local storage con el json del registro
 
       evt.target.reset()
     } catch (error) {
       console.log(error)
+      swal("Error!", "El usuario no se ha registrado!", "error");
     }
     
   }
