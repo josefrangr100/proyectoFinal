@@ -74,7 +74,12 @@ export const GridRegister = () => {
       // const { nameInput, surInput, emailInput, passwordInput, passwordRepeatInput} = data;
       const registerData = await axios.post(`http://localhost:3001/users`, data);
       console.log(registerData);
-      swal("Enhorabuena!", "El usuario ha sido registrado correctamente!", "success");
+      swal({
+        title: "Buen trabajo!",
+        text: "El usuario ha sido registrado correctamente!",
+        icon: "success",
+        button: <link>/components/login/login</link>
+      });
       //aqui hace un local storage con el json del registro
 
       evt.target.reset()
