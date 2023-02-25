@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import { useState } from 'react';
 import swal from 'sweetalert';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -63,6 +64,10 @@ export const GridRegister = () => {
         swal("Error", "Las contraseñas no coinciden", "warning");
         return
       }
+
+      
+
+
 
       console.log(evt);
       const data = {
@@ -136,6 +141,11 @@ export const GridRegister = () => {
       <Button className="button-reg" variant="outline-dark" type="submit">
         Registrarme
       </Button>
+      <p>Ya tienes usuario? <NavLink href='/login' to='/login'>
+                        <div>
+                            Ingresar
+                        </div>
+                </NavLink></p>
     </Form>
     
         {/* </Col> */}
